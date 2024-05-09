@@ -1,0 +1,16 @@
+language: generic
+deploy:
+install:
+before_script:
+script:
+
+## Change the url if necessary
+notifications:
+  webhooks:
+    urls:
+      - https://atlas-webhook-n2.valven.com/api/deployment/KEY
+    on_success: always
+    on_failure: never
+    on_start:   never
+    on_cancel:  never
+    on_error:   never
